@@ -1,0 +1,27 @@
+@import "../abstracts/variables";
+
+*,
+/* add after and before, because they won't have the behavior just from * selector */
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    /* inherit forces every element to inherit box sizing */
+    box-sizing: inherit;
+}
+
+/* root font size is set in html selector */
+html {
+    /* it is better practice to set the font size to % so it is % of the default font size, in case the user has changed it */
+    /* if we set is to 100%, it will be the default 16px */
+    /* we want 10px, so we divide 10 by 16 to get the right percentage */
+    // it defines what 1rem is
+    font-size: 62.5%;
+    /* font-size: 10px; */
+    /* now we know that 1rem = 10px*/
+}
+
+body {
+    box-sizing: border-box;
+    background-color: black;
+}

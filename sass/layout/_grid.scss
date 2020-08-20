@@ -1,0 +1,49 @@
+.row{
+    // max width adapts to the viewport
+    max-width:$grid-width;
+    // trick to center block element inside another block element
+    margin: 0 auto;
+    margin-bottom: $gutter-vertical;
+
+    //select everything except the last child
+    &:not(:last-child){
+        margin-bottom: $gutter-vertical;
+    }
+
+    //this is how we include a mixin
+    @include clearfix;
+
+    //all the columns that are starting with col 
+    //can also use * to select all 
+    //or use $ to select any class that ENDS with the attribute name
+    [class^="col-"] {
+        float:left;
+        &:not(:last-child){
+            margin-right: $gutter-horizontal;
+        }
+    }
+
+    .col-1-of-2 {
+        width: calc((100% - #{$gutter-horizontal}) / 2);
+    }
+
+    .col-1-of-3{
+        width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+    }
+
+    .col-2-of-3{
+        width: calc(2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal});
+    }
+
+    .col-1-of-4{
+        width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+    }
+
+    .col-2-of-4{
+        width: calc(2 * ((100% - 3 * #{$gutter-horizontal}) / 4) + #{$gutter-horizontal});
+    }
+
+    .col-3-of-4{
+        width: calc(3 * ((100% - 3 * #{$gutter-horizontal}) / 4) + 2 * #{$gutter-horizontal});
+    }
+}

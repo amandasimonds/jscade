@@ -1,0 +1,27 @@
+{
+  "name": "jscade",
+  "version": "1.0.0",
+  "description": "Some fun javascript games",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amandasimonds/jscade.git"
+  },
+  "author": "amanda simonds",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amandasimonds/jscade/issues"
+  },
+  "homepage": "https://github.com/amandasimonds/jscade#readme",
+  "devDependencies": {
+    "sass": "^1.26.10"
+  },
+  "dependencies": {
+    "node-sass": "^4.14.1",
+    "sass-loader": "^9.0.3"
+  }
+}

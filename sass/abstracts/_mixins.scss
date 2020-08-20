@@ -1,0 +1,13 @@
+//mixins are reusable css codes
+
+@mixin clearfix {
+    //after creates a pseudo element after the element
+    //you must give it an empty content, bc it is an element
+    &::after{
+        content:"";
+        //display table is the standard version for clearfix
+        display: table;
+        //both means it will work wheather we use float right or float left
+        clear: both;
+    }
+}
