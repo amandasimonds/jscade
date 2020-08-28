@@ -167,6 +167,11 @@ body {
     width: 50%;
     padding: 6rem; }
 
+.canvas {
+  height: 300px;
+  width: 300px;
+  background-color: #2998ff; }
+
 .arcade {
   margin: 20px;
   max-width: 900px;
