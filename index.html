@@ -3,28 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JSCADE</title>
 </head>
 <body>
     <section class="main">
+        <header class="header">
+            <div class="header__text-box">
+                <h1 class="heading-primary heading-primary--main">Welcome to JSCADE!</h1>
+            </div>
+        </header>
 
-        <div class="heading-primary--main">Welcome to JSCADE!</div>
-        <section class="arcade">
+        <section class="section-arcade">
         <div class="row">
+
             <div class="col-1-of-3 arcade-grid">
-                <a href="./pong/pong.html">Pong</a></div>
+                <div class="section-arcade__box">
+                    <a href="./pong/pong.html" class="btn btn--arcade">Pong</a></div>
+                </div>
+
             <div class="col-1-of-3 arcade-grid">
-            <a href="./snake/snake.html">Snake</a></div>
+                <div class="section-arcade__box">
+                    <a href="./snake/snake.html" class="btn btn--arcade">Snake</a></div>
+                </div>
+
             <div class="col-1-of-3 arcade-grid">
-                <a href="./drawing/drawing.html">Drawing</a>
+                <div class="section-arcade__box">
+                    <a href="./drawing/drawing.html" class="btn btn--arcade">Drawing</a>
+                </div>
             </div>
         </div>
+
         <div class="row">
             <div class="col-1-of-3 arcade-grid"></div>
             <div class="col-1-of-3 arcade-grid"></div>
             <div class="col-1-of-3 arcade-grid"></div>
         </div>
+        
     </section>
 </section>
     

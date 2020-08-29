@@ -1,5 +1,5 @@
 .arcade{
-    margin:20px;
+    margin:2px;
     max-width:900px;
     position: relative;
     left: 50%;
@@ -8,6 +8,15 @@
 }
 
 .arcade-grid{
-    border: 1px solid white;
+    border: 1px solid rgba(48, 51, 233, 0.329);
+    border-radius:10px;
+    box-shadow: 0 0 30px 0px rgba(48, 51, 233, 0.329);
     height: 300px;
+    padding:10px;
+
+    &:hover{
+        box-shadow: 0 0 30px 0px white;
+        border: 1px solid white;
+        transition: 1s;
+    }
 }

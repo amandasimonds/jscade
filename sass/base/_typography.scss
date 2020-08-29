@@ -7,9 +7,20 @@ body {
     padding: 3rem;
 }
 
+@font-face {
+    font-family: 'Neon';
+    src: url('../../assets/fonts/NEON____.TTF');
+    src: url('../../assets/fonts/NEON____.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .heading-primary{
-    color:$color-white;
+    color: #00ff37;
+    // box-shadow: 5px white;
     text-transform: uppercase;
+    font-family: 'Neon';
+    animation: neon .08s ease-in-out infinite alternate;
 
     /* prevents the shaking from happening */
     backface-visibility: hidden;
@@ -20,17 +31,6 @@ body {
         display: block;
         font-size: 6rem;
         font-weight: 400;
-        letter-spacing: 3.3rem;
-    
-        animation-name: moveInLeft;
-        animation-duration: 1s;
-    
-        /* ease-in will start slower, then get faster (opposite for ease-out) */
-        animation-timing-function: ease-out;
-        /* 
-        animation-delay: 3s; 
-        animation-iteration-count: 3;
-        */
     }
     
     &--sub{
