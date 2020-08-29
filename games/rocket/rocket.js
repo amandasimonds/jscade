@@ -82,3 +82,5 @@ function stopMove() {
     gamePiece.speedX = 0;
     gamePiece.speedY = 0;
 }
+
+startGame()
