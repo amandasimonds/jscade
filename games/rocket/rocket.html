@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <a href="../../index.html">home</a>
+
+    <div class="game">
+
+        <canvas class="rocket-canvas" style="border: 1px solid white"></canvas>
+        
+        </br>
+
+        <button onmousedown="moveUp()" ontouchstart="moveUp()" onmouseup="stopMove()">UP</button>
+        <button onmousedown="moveDown()" ontouchstart="moveDown()" onmouseup="stopMove()">DOWN</button>
+        <button onmousedown="moveLeft()" ontouchstart="moveLeft()" onmouseup="stopMove()">LEFT</button>
+        <button onmousedown="moveRight()" ontouchstart="moveRight()" onmouseup="stopMove()">RIGHT</button>
+        
+    </div>
+
+<script type="text/javascript" src="./rocket.js"></script>
+</body>
+</html>
