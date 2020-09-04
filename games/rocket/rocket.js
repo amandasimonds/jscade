@@ -60,6 +60,8 @@ var gameArea = {
     //tells the game to stop
     stop : function() {
         clearInterval(this.interval)
+        alert("game over!!!!")
+        location.reload()
     }
 }
 
