@@ -77,7 +77,7 @@ body {
 .heading-primary {
   color: #00ff37;
   text-transform: uppercase;
-  font-family: 'Neon';
+  font-family: 'Audiowide', cursive;
   animation: neon .08s ease-in-out infinite alternate;
   /* prevents the shaking from happening */
   backface-visibility: hidden;
